@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+A modern, professional portfolio website for Moon Technology, a startup software development company. The project showcases the company’s services, projects, and team, and is designed to be easily updatable with new projects in the future.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Overview
 
-Currently, two official plugins are available:
+Moon Technology Portfolio is a full-stack web application built to showcase projects, services, and company information for Moon Technology. The backend is powered by Hono with Cloudflare D1, and the frontend is built using React + TailwindCSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The website is fully responsive, SEO-friendly, and comes with a CMS-like admin functionality to add, update, or delete projects and manage contact form submissions.
 
-## React Compiler
+Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Home page with hero section, company tagline, and CTA buttons
 
-## Expanding the ESLint configuration
+About Us section highlighting company mission, story, and team
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Services section showcasing software development, UI/UX, and consulting
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Portfolio/projects section with images, descriptions, and technologies
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Contact form with backend storage
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Admin endpoints to manage projects and contact submissions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Fully responsive, modern, and minimalistic design
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Dark purple, white, and gradient blue theme
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Smooth scroll and animation effects
+
+Tech Stack
+
+Frontend:
+
+React
+
+TypeScript
+
+TailwindCSS
+
+Lucide Icons
+
+Backend:
+
+Hono (Cloudflare Workers)
+
+TypeScript
+
+Cloudflare D1 (SQLite)
+
+Zod for input validation
+
+Dev Tools:
+
+Vite / Next.js
+
+ESLint + Prettier
