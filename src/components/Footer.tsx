@@ -31,11 +31,11 @@ export default function Footer() {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-gray-300">
                   <Mail className="w-4 h-4" />
-                  <span>hello@moontechnology.com</span>
+                  <span>moontechnology.np@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-300">
                   <Phone className="w-4 h-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>(+977 9808100067)</span>
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-300 text-sm mb-4 md:mb-0">
-              © 2024 Moon Technology. All rights reserved.
+              © 2025 Moon Technology. All rights reserved.
             </div>
             
             {/* Social Links */}
