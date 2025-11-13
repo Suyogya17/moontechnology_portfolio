@@ -83,7 +83,7 @@ export default function About() {
                 <span className="text-2xl font-bold">JS</span>
               </div>
               <h4 className="font-semibold">Sijan Shrestha</h4>
-              <p className="text-sm opacity-80">CEO & Co-Founder</p>
+              <p className="text-sm opacity-80">Managing Director & Co-Founder</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
