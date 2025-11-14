@@ -81,7 +81,7 @@ export default function About() {
   <div className="text-center flex flex-col items-center">
     <div className="w-32 h-32 bg-white/20 rounded-full mb-4 flex items-center justify-center overflow-hidden">
       <img
-        src="src/assets/Sijan_DP.jpg"
+        src="/Sijan_DP.jpg"
         alt="Sijan Shrestha"
         className="w-full h-full object-cover object-center"
       />
