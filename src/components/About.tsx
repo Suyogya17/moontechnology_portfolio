@@ -77,36 +77,20 @@ export default function About() {
           <p className="text-xl mb-8 opacity-90">
             A diverse group of talented professionals passionate about creating exceptional digital experiences
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold">JS</span>
-              </div>
-              <h4 className="font-semibold">Sijan Shrestha</h4>
-              <p className="text-sm opacity-80">Managing Director & Co-Founder</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold">MJ</span>
-              </div>
-              <h4 className="font-semibold">Maria Johnson</h4>
-              <p className="text-sm opacity-80">Lead Designer</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold">DL</span>
-              </div>
-              <h4 className="font-semibold">David Lee</h4>
-              <p className="text-sm opacity-80">Senior Developer</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold">SR</span>
-              </div>
-              <h4 className="font-semibold">Sarah Rodriguez</h4>
-              <p className="text-sm opacity-80">Product Manager</p>
-            </div>
-          </div>
+       <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+  <div className="text-center flex flex-col items-center">
+    <div className="w-32 h-32 bg-white/20 rounded-full mb-4 flex items-center justify-center overflow-hidden">
+      <img
+        src="src/assets/Sijan_DP.jpg"
+        alt="Sijan Shrestha"
+        className="w-full h-full object-cover object-center"
+      />
+    </div>
+    <h4 className="font-semibold">Sijan Shrestha</h4>
+    <p className="text-sm opacity-80">Managing Director & Co-Founder</p>
+  </div>
+</div>
+
         </div>
       </div>
     </section>
