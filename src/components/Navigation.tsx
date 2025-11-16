@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Moon, Menu, X } from 'lucide-react';
-import starmoon from "../assets/StarMoon.png"
+import starmoon from "../../public/StarMoon.png"
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
