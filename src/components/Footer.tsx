@@ -1,4 +1,4 @@
-import { Moon, Mail, Phone, ArrowUp } from 'lucide-react';
+import {  Mail, Phone, ArrowUp } from 'lucide-react';
 import starmoon from "../../public/StarMoon.png"
 export default function Footer() {
   const scrollToTop = () => {

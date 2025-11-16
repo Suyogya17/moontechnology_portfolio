@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Moon, Menu, X } from 'lucide-react';
+import {  Menu, X } from 'lucide-react';
 import starmoon from "../../public/StarMoon.png"
 
 export default function Navigation() {
