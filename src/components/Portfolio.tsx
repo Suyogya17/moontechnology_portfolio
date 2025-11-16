@@ -57,7 +57,7 @@ export default function Portfolio() {
       title: "Healthcare Management System",
       description: "Comprehensive healthcare management platform enabling patient records, appointment scheduling, and telemedicine capabilities.",
       technologies: "Next.js, TypeScript, MongoDB, WebRTC",
-      image_url: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop",
+      image_url: "https://www.aaahc.org/uploads/2021/02/spotlight-accreditation-1024x683.jpg",
       project_url: "#",
       github_url: "#",
       is_featured: true,

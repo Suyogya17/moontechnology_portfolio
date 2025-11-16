@@ -1,5 +1,5 @@
 import { Moon, Mail, Phone, ArrowUp } from 'lucide-react';
-
+import starmoon from "../assets/StarMoon.png"
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -21,7 +21,11 @@ export default function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <Moon className="w-8 h-8 text-purple-400" />
+                <img
+              src={starmoon}
+              alt="Moon Technology Logo"
+              className="w-10 h-10 object-cover"
+            />
                 <span className="text-xl font-bold text-white">Moon Technology</span>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6 max-w-md">

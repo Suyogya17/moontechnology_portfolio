@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen py-16 px-6 md:px-20">
-      <section>
+      <section id="contact">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">
             <span className="text-blue-400">Get in</span> Touch
