@@ -72,26 +72,43 @@ export default function About() {
         </div>
 
         {/* Team Preview */}
-        <div className="text-center bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-12 text-white">
-          <h3 className="text-3xl font-bold mb-6">Meet Our Team</h3>
-          <p className="text-xl mb-8 opacity-90">
-            A diverse group of talented professionals passionate about creating exceptional digital experiences
-          </p>
-       <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-  <div className="text-center flex flex-col items-center">
-    <div className="w-32 h-32 bg-white/20 rounded-full mb-4 flex items-center justify-center overflow-hidden">
-      <img
-        src="/Sijan_DP.jpg"
-        alt="Sijan Shrestha"
-        className="w-full h-full object-cover object-center"
-      />
+        {/* Founder Section */}
+<div className="relative overflow-hidden bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12 text-white shadow-xl">
+
+  {/* Glow Effect */}
+  <div className="absolute inset-0 bg-white/10 blur-3xl opacity-20"></div>
+
+  <h3 className="text-4xl font-extrabold mb-10 relative z-10 tracking-wide text-center">
+  Meet Our Founder
+</h3>
+
+
+  <div className="grid grid-cols-1 md:grid-cols-1 gap-8 relative z-10">
+    <div className="text-center flex flex-col items-center">
+
+      {/* Image with Glow + Border Animation */}
+      <div className="w-40 h-40 rounded-full mb-6 p-[3px] bg-gradient-to-br from-white/60 to-white/20 shadow-xl transition transform hover:scale-105">
+        <div className="w-full h-full rounded-full overflow-hidden">
+          <img
+            src="/Sijan_DP.jpg"
+            alt="Sijan Shrestha"
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <h4 className="text-2xl font-semibold tracking-wide">Sijan Shrestha</h4>
+      <p className="text-base opacity-80 mb-4">Managing Director & Co-Founder</p>
+
+      {/* Shortened & Polished Bio */}
+      <p className="text-lg max-w-2xl mx-auto leading-relaxed opacity-95 text-justify hyphens-auto">
+  Sijan is a visionary leader whose passion for technology, creativity, and strategic excellence continually drives Moon Technology forward.
+</p>
+
     </div>
-    <h4 className="font-semibold">Sijan Shrestha</h4>
-    <p className="text-sm opacity-80">Managing Director & Co-Founder</p>
   </div>
 </div>
 
-        </div>
       </div>
     </section>
   );
