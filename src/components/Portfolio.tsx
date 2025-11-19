@@ -40,18 +40,20 @@ export default function Portfolio() {
   // Sample projects if none exist in database
   const sampleProjects = projects.length === 0 ? [
     {
-      id: 1,
-      title: "E-Commerce Platform",
-      description: "A modern e-commerce solution with advanced features including inventory management, payment processing, and analytics dashboard.",
-      technologies: "React, Node.js, PostgreSQL, Stripe",
-      image_url: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-      project_url: "#",
-      github_url: "#",
-      is_featured: true,
-      display_order: 1,
-      created_at: "2024-01-01",
-      updated_at: "2024-01-01"
-    },
+  id: 1,
+  title: "Accounting Platform",
+  description:
+    "A next-generation accounting platform designed to simplify financial operations with powerful tools for inventory management, payment processing, automated bookkeeping, and real-time analytics. Built to help businesses stay organized, make smarter decisions, and rise stronger with confidence.",
+  technologies: "React, Node.js, MySQL/MariaDB",
+  image_url: "public/Finance_Mix.png",
+  project_url: "https://accounting-software-three.vercel.app/",
+  github_url: "https://github.com/moontechnologynp-source/accountingSoftware.git",
+  is_featured: true,
+  display_order: 1,
+  created_at: "2024-01-01",
+  updated_at: "2024-01-01"
+},
+
     {
       id: 2,
       title: "Healthcare Management System",
