@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16">
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16">
             <div className="text-center">
               <div className="text-3xl font-bold text-white">50+</div>
               <div className="text-gray-400">Projects Delivered</div>
@@ -81,16 +81,16 @@ export default function Hero() {
               <div className="text-3xl font-bold text-white">99%</div>
               <div className="text-gray-400">Client Satisfaction</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
