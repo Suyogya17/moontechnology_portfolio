@@ -37,40 +37,25 @@ export default function Portfolio() {
     );
   }
 
-  // Sample projects if none exist in database
   const sampleProjects = projects.length === 0 ? [
     {
-  id: 1,
-  title: "Accounting Platform",
-  description:
-    "A next-generation accounting platform designed to simplify financial operations with powerful tools for inventory management, payment processing, automated bookkeeping, and real-time analytics. Built to help businesses stay organized, make smarter decisions, and rise stronger with confidence.",
-  technologies: "React, Node.js, MySQL/MariaDB",
-  image_url: "/Finance_Mix.png",
-  project_url: "https://accounting-software-three.vercel.app/",
-  github_url: "https://github.com/moontechnologynp-source/accountingSoftware.git",
-  is_featured: true,
-  display_order: 1,
-  created_at: "2024-01-01",
-  updated_at: "2024-01-01"
-},
-
-    // {
-    //   id: 2,
-    //   title: "Healthcare Management System",
-    //   description: "Comprehensive healthcare management platform enabling patient records, appointment scheduling, and telemedicine capabilities.",
-    //   technologies: "Next.js, TypeScript, MongoDB, WebRTC",
-    //   image_url: "https://www.aaahc.org/uploads/2021/02/spotlight-accreditation-1024x683.jpg",
-    //   project_url: "#",
-    //   github_url: "#",
-    //   is_featured: true,
-    //   display_order: 2,
-    //   created_at: "2024-01-01",
-    //   updated_at: "2024-01-01"
-    // },
+      id: 1,
+      title: "Accounting Platform",
+      description:
+        "A next-generation accounting platform designed to simplify financial operations with powerful tools for inventory management, payment processing, automated bookkeeping, and real-time analytics. Built to help businesses stay organized, make smarter decisions, and rise stronger with confidence.",
+      technologies: "React, Node.js, MySQL/MariaDB",
+      image_url: "/Finance_Mix.png",
+      project_url: "https://accounting-software-three.vercel.app/",
+      github_url: "https://github.com/moontechnologynp-source/accountingSoftware.git",
+      is_featured: true,
+      display_order: 1,
+      created_at: "2024-01-01",
+      updated_at: "2024-01-01"
+    },
     {
       id: 3,
-      title: "Stock Managment System",
-      description: "Real-time stock managment system which have financial analytics dashboard with advanced charting, portfolio tracking, and risk assessment tools.",
+      title: "Stock Management System",
+      description: "Real-time stock management system with financial analytics dashboard, advanced charting, portfolio tracking, and risk assessment tools.",
       technologies: "Node.js, React, Khalti, Chart.js",
       image_url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
       project_url: "#",
@@ -117,26 +102,20 @@ export default function Portfolio() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Featured Projects</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {featuredProjects.map((project) => (
-                <div key={project.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <a
+                  key={project.id}
+                  href={project.project_url || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all overflow-hidden"
+                >
                   <div className="relative overflow-hidden">
                     <img 
                       src={project.image_url || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop'}
                       alt={project.title}
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute bottom-4 right-4 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      {project.project_url && (
-                        <a href={project.project_url} className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors">
-                          <ExternalLink className="w-5 h-5 text-gray-800" />
-                        </a>
-                      )}
-                      {project.github_url && (
-                        <a href={project.github_url} className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors">
-                          <Github className="w-5 h-5 text-gray-800" />
-                        </a>
-                      )}
-                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
                   </div>
                   <div className="p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
@@ -149,7 +128,7 @@ export default function Portfolio() {
                       ))}
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -161,26 +140,20 @@ export default function Portfolio() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">More Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {otherProjects.map((project) => (
-                <div key={project.id} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <a
+                  key={project.id}
+                  href={project.project_url || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block bg-white rounded-xl shadow-lg hover:shadow-xl transition-all overflow-hidden"
+                >
                   <div className="relative overflow-hidden">
                     <img 
                       src={project.image_url || 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop'}
                       alt={project.title}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute top-4 right-4 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      {project.project_url && (
-                        <a href={project.project_url} className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors">
-                          <ExternalLink className="w-4 h-4 text-gray-800" />
-                        </a>
-                      )}
-                      {project.github_url && (
-                        <a href={project.github_url} className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors">
-                          <Github className="w-4 h-4 text-gray-800" />
-                        </a>
-                      )}
-                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
                   </div>
                   <div className="p-6">
                     <h3 className="text-lg font-bold text-gray-900 mb-2">{project.title}</h3>
@@ -198,7 +171,7 @@ export default function Portfolio() {
                       )}
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>

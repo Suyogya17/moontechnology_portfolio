@@ -79,7 +79,8 @@ export default function About() {
   <div className="absolute inset-0 bg-white/10 blur-3xl opacity-20"></div>
 
   <h3 className="text-4xl font-extrabold mb-10 relative z-10 tracking-wide text-center">
-  Meet Our Founder
+    <span className="bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent"> Meet Our Founder</span>
+ 
 </h3>
 
 
@@ -101,7 +102,7 @@ export default function About() {
       <p className="text-base opacity-80 mb-4">Managing Director & Co-Founder</p>
 
       {/* Shortened & Polished Bio */}
-      <p className="text-lg max-w-2xl mx-auto leading-relaxed opacity-95 text-justify hyphens-auto">
+      <p className="text-lg max-w-3xl mx-auto leading-relaxed opacity-95 text-center hyphens-auto">
   Sijan is a visionary leader whose passion for technology, creativity, and strategic excellence continually drives Moon Technology forward.
 </p>
 
