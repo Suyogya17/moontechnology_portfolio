@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ExternalLink, Github, Loader2 } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import type { ProjectType } from '../shared/types.ts';
 
 export default function Portfolio() {
