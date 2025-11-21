@@ -1,5 +1,8 @@
 import {  Mail, Phone, ArrowUp } from 'lucide-react';
 import starmoon from "../../public/StarMoon.png"
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+
+
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -113,7 +116,7 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
-                  <span className="text-xs font-bold">Li</span>
+                   <FaLinkedin size={18} />
                 </div>
               </a>
               <a 
@@ -122,18 +125,22 @@ export default function Footer() {
                 aria-label="Twitter"
               >
                 <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
-                  <span className="text-xs font-bold">Tw</span>
+                   <FaTwitter size={18} />
                 </div>
               </a>
               <a 
-                href="#" 
-                className="text-gray-300 hover:text-white transition-colors duration-200"
-                aria-label="GitHub"
-              >
-                <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
-                  <span className="text-xs font-bold">Gh</span>
-                </div>
-              </a>
+  href="https://www.instagram.com/moon_technology_/?utm_source=ig_web_button_share_sheet" 
+  className="text-gray-300 hover:text-white transition-colors duration-200"
+  aria-label="Instagram"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors">
+   <FaInstagram size={18} />
+
+  </div>
+</a>
+
               
               {/* Scroll to Top */}
               <button
