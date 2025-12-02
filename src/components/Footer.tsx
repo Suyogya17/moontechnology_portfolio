@@ -111,7 +111,7 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex items-center space-x-6">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/moon-technology-pvt-ltd/" 
                 className="text-gray-300 hover:text-white transition-colors duration-200"
                 aria-label="LinkedIn"
               >
