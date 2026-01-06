@@ -1,4 +1,5 @@
 import { Target, Users, Lightbulb, Award } from 'lucide-react';
+import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function About() {
   return (
@@ -100,13 +101,24 @@ export default function About() {
 
       <h4 className="text-2xl font-semibold tracking-wide">Sijan Shrestha</h4>
       <p className="text-base opacity-80 mb-4">Managing Director & Co-Founder</p>
+      
 
       {/* Shortened & Polished Bio */}
       <p className="text-lg max-w-3xl mx-auto leading-relaxed opacity-95 text-center hyphens-auto">
   Sijan is a visionary leader whose passion for technology, creativity, and strategic excellence continually drives Moon Technology forward.
 </p>
-
     </div>
+     {/* <div className="flex items-center justify-end space-x-6">
+              <a 
+                href="https://www.linkedin.com/company/moon-technology-pvt-ltd/" 
+                className="text-gray-300 hover:text-white transition-colors duration-200"
+                aria-label="LinkedIn"
+              >
+                <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-purple-600 transition-colors">
+                   <FaLinkedin size={18} />
+                </div>
+              </a>
+            </div> */}
   </div>
 </div>
 
