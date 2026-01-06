@@ -1,5 +1,4 @@
 import { Target, Users, Lightbulb, Award } from 'lucide-react';
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function About() {
   return (
